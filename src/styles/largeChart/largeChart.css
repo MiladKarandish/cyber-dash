@@ -1,0 +1,65 @@
+.collection__container .collection__charts:first-of-type .list-sails_title_y,
+.collection .collection__charts:first-of-type .list-sails_title_y {
+  top: 50%;
+  transform: rotate(270deg) translate(-50%, 126%);
+}
+.collection__container .collection__charts:first-of-type .list-sails_title_x,
+.collection .collection__charts:first-of-type .list-sails_title_x {
+  bottom: 3%;
+}
+.collection__container .collection__charts:last-of-type .list-sails_title_y,
+.collection .collection__charts:last-of-type .list-sails_title_y {
+  top: 50%;
+  transform: rotate(270deg) translate(-50%, 130%);
+}
+.collection__container .collection__charts:last-of-type .list-sails_title_x,
+.collection .collection__charts:last-of-type .list-sails_title_x {
+  bottom: 3%;
+  transform: translateX(-25%);
+}
+.collection__container .ETHPrice_chart,
+.collection .ETHPrice_chart {
+  height: 245px !important;
+}
+@media (max-width: 1181px) {
+  .collection__container .collection__large_chart .charts,
+  .collection .collection__large_chart .charts {
+    flex-direction: column;
+    padding-bottom: 1rem;
+  }
+  .collection__container .collection__large_chart .price_range,
+  .collection .collection__large_chart .price_range {
+    height: -moz-fit-content !important;
+    height: fit-content !important;
+  }
+  .collection__container .collection__large_chart .collection__charts,
+  .collection .collection__large_chart .collection__charts {
+    min-height: 200px !important;
+  }
+  .collection__container .collection__large_chart .collection__charts:first-of-type .list-sails_title_y,
+  .collection .collection__large_chart .collection__charts:first-of-type .list-sails_title_y {
+    top: 50%;
+    transform: rotate(270deg) translate(0%, 126%);
+  }
+  .collection__container .collection__large_chart .collection__charts:first-of-type .list-sails_title_x,
+  .collection .collection__large_chart .collection__charts:first-of-type .list-sails_title_x {
+    bottom: 9%;
+  }
+  .collection__container .collection__large_chart .collection__charts:last-of-type .list-sails_title_y,
+  .collection .collection__large_chart .collection__charts:last-of-type .list-sails_title_y {
+    top: 50%;
+  }
+  .collection__container .collection__large_chart .collection__charts:last-of-type .list-sails_title_x,
+  .collection .collection__large_chart .collection__charts:last-of-type .list-sails_title_x {
+    bottom: 1.5%;
+    transform: translateX(-25%);
+  }
+  .collection__container .collection__large_chart .ETHPrice_chart,
+  .collection .collection__large_chart .ETHPrice_chart {
+    height: 245px !important;
+  }
+}
+.collection__container .collection__filters_dropdown,
+.collection .collection__filters_dropdown {
+  display: none;
+}/*# sourceMappingURL=largeChart.css.map */

@@ -1,0 +1,165 @@
+.collection__list_scroll_container {
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  border-radius: 10px;
+  padding: 10px 7px;
+  padding-right: 3px;
+  background: #0b1e39 0% 0% no-repeat padding-box;
+}
+
+.collection__list {
+  width: 290px;
+  height: 1021px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.collection__list::-webkit-scrollbar {
+  width: 3px;
+  background-color: transparent;
+}
+.collection__list::-webkit-scrollbar-thumb {
+  background-color: #244677;
+}
+.collection__list .collection__list_item {
+  width: 280px;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #244677;
+  border-radius: 10px;
+  padding: 5px;
+  background: #244677 0% 0% no-repeat padding-box;
+  cursor: pointer;
+}
+.collection__list .collection__list_item:hover {
+  background: #1956e2 0% 0% no-repeat padding-box;
+  border: 1px solid #244677;
+}
+.collection__list .collection__list_item:hover button {
+  background-color: #0b1e39 !important;
+}
+.collection__list .collection__list_item img {
+  min-width: 50px;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+}
+.collection__list .collection__list_item .Rank_Id__container,
+.collection__list .collection__list_item .Price_Time__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 8px;
+}
+.collection__list .collection__list_item .Rank_Id__container {
+  margin-right: auto;
+  margin-left: 6px;
+}
+.collection__list .collection__list_item .Rank {
+  font: normal normal normal 12px/15px Roboto;
+  letter-spacing: 0px;
+  color: #89baff;
+}
+.collection__list .collection__list_item .Rank span {
+  font: normal normal bold 12px/16px Roboto;
+  letter-spacing: 0px;
+  color: #ffffff;
+}
+.collection__list .collection__list_item .Id {
+  font: normal normal bold 12px/14px Roboto;
+  letter-spacing: 0px;
+  color: #d1d1d1;
+}
+.collection__list .collection__list_item .cards-right-side__container {
+  width: 130px;
+}
+.collection__list .collection__list_item .cards-right-side__container .top-side-container {
+  display: flex;
+  justify-content: space-between;
+}
+.collection__list .collection__list_item .cards-right-side__container .svg-button__container {
+  display: flex;
+  width: 80px;
+  justify-content: space-between;
+}
+.collection__list .collection__list_item .cards-right-side__container .price-title__container,
+.collection__list .collection__list_item .cards-right-side__container .time-title__container {
+  font: normal normal normal 12px/16px Roboto;
+  color: #89baff;
+}
+.collection__list .collection__list_item .cards-right-side__container .price-amount-svg__container {
+  font: normal normal bold 12px/16px Roboto;
+  color: #ffffff;
+}
+.collection__list .collection__list_item .cards-right-side__container .price-amount-svg__container svg {
+  width: 8px;
+  height: 13px;
+  position: relative;
+  top: 2px;
+  margin-right: 2px;
+}
+.collection__list .collection__list_item .cards-right-side__container .time-amount__container {
+  font: normal normal normal 10px/11px Roboto;
+  color: #d1d1d1;
+}
+.collection__list .collection__list_item .cards-right-side__container button {
+  display: none;
+}
+.collection__list .collection__list_item .cards-right-side__container .listings-specific button {
+  display: unset;
+  width: 49px;
+  height: 23px;
+  background: #1956e2 0% 0% no-repeat padding-box;
+  border-radius: 27px;
+  border: none;
+  font: normal normal bold 12px/14px Roboto;
+  color: #ffffff;
+}
+.collection__list .collection__list_item .cards-right-side__container .listings-specific .ethscan__svg {
+  display: none;
+}
+.collection__list .collection__list_item .cards-right-side__container .listings-specific .Time {
+  display: flex;
+}
+.collection__list .collection__list_item .cards-right-side__container .listings-specific .time-title__container {
+  display: none;
+}
+.collection__list .collection__list_item .cards-right-side__container .listings-specific .time-amount__container {
+  margin-left: auto;
+  transform: translateY(-5px);
+}
+.collection__list .collection__list_item .cards-right-side__container .listings-specific .price__container {
+  display: flex;
+  flex-direction: column;
+  transform: translateY(2px);
+}
+.collection__list .collection__list_item .cards-right-side__container .listings-specific .price-amount-svg__container {
+  transform: translateY(6px);
+}
+.collection__list .collection__list_item .cards-right-side__container .orders-specific .svg-button__container {
+  width: 50px;
+}
+.collection__list .collection__list_item .cards-right-side__container .orders-specific a svg {
+  width: 23px;
+  height: 23px;
+}
+.collection__list .collection__list_item .cards-right-side__container .orders-specific .Time {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 1200px) {
+  .collection__list {
+    height: 90vh;
+  }
+}/*# sourceMappingURL=collectionList.css.map */

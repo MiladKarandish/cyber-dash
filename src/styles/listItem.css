@@ -1,0 +1,57 @@
+.table {
+  width: 100%;
+  color: #fff;
+  font-size: 1.5rem;
+  border-spacing: 0;
+  text-align: left;
+  margin-top: 30px;
+}
+.table * {
+  max-width: 100%;
+  border-spacing: 0;
+  border: 0;
+  margin: 0;
+}
+.table svg * {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  pointer-events: none;
+}
+.table td, .table th {
+  padding: 1rem;
+  text-align: left;
+}
+.table .table__body__row {
+  background-color: #000f24;
+  width: 100%;
+}
+.table .table__body__row td:first-child {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.table .table__body__row td:last-child {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.table .table__space {
+  height: 1rem;
+}
+.table .action-icon {
+  cursor: pointer;
+}
+.table svg {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  pointer-events: none;
+}
+.table .active svg {
+  stroke: red;
+}
+@media (max-width: 500px) {
+  .table {
+    width: 500px;
+    display: block;
+  }
+}/*# sourceMappingURL=listItem.css.map */

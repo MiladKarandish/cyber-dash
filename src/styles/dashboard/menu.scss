@@ -1,0 +1,34 @@
+@use '../colors' as *;
+@use '../variables' as *;
+
+.menu {
+  width: 100%;
+  aspect-ratio: 1/1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: $border-radius-md;
+  color: #fff;
+  font: normal normal bold 16px/18px Roboto;
+  cursor: pointer;
+
+  svg {
+    width: 44.23px;
+    height: 44.23px;
+    user-select: none;
+    pointer-events: none;
+  }
+
+  span {
+    white-space: pre;
+    user-select: none;
+    pointer-events: none;
+  }
+
+  &.active {
+    background-color: $primary-light;
+  }
+}

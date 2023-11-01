@@ -1,0 +1,55 @@
+@use '../colors' as *;
+@use '../variables' as *;
+
+.main {
+  width: 100%;
+  height: 90vh;
+  max-width: 1366px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin: auto;
+  padding: 1rem 8rem;
+
+  .main__menu {
+    position: relative;
+    width: 13rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: $border-radius-md;
+    background-color: $primary;
+  }
+
+  .main__board {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 4rem;
+    border-radius: $border-radius-md;
+    background-color: $primary;
+  }
+
+  @media (max-width: 630px) {
+    padding: 1rem 0;
+    justify-content: space-between;
+
+    .main__board,
+    .main__menu {
+      border-radius: 5px;
+      max-width: 75%;
+    }
+
+    .main__board {
+      overflow: hidden;
+    }
+  }
+}

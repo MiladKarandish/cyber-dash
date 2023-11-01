@@ -1,0 +1,30 @@
+.buttons__container {
+  width: 100%;
+  padding: 1rem;
+}
+.buttons__container .buttons__second-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  border-radius: 30px;
+  background-color: #0b1e39;
+  overflow: hidden;
+}
+.buttons__container button {
+  width: 100%;
+  min-height: 3rem;
+  border: none;
+  outline: none;
+  padding: 1.2rem 1rem;
+  background-color: transparent;
+  color: #fff;
+  font-size: 1.4rem;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+}
+.buttons__container button.active {
+  border-radius: 30px;
+  background-color: #1956e2;
+}/*# sourceMappingURL=buttonGroup.css.map */

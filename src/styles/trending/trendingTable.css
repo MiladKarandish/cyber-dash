@@ -1,0 +1,129 @@
+.trending__table .table__header .head_items:first-of-type {
+  transform: translateX(53px);
+}
+.trending__table .table__row {
+  cursor: pointer;
+}
+.trending__table .head_items {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 500;
+  font: normal normal bold 12px/14px Roboto;
+}
+.trending__table .head_items .info__details {
+  position: absolute;
+  top: 100%;
+  left: 25%;
+  width: 25rem;
+  max-width: unset;
+  height: -moz-fit-content;
+  height: fit-content;
+  border-radius: 10px;
+  padding: 2rem;
+  background-color: #0b1e39;
+  color: rgba(255, 255, 255, 0.534);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  pointer-events: none;
+  z-index: 10;
+  transition: opacity 0.1s ease;
+  opacity: 0;
+}
+.trending__table .head_items svg {
+  -webkit-user-select: auto;
+     -moz-user-select: auto;
+          user-select: auto;
+  pointer-events: all;
+}
+.trending__table .head_items svg:hover {
+  stroke: #1956e2;
+}
+.trending__table .head_items svg:hover + .tooltip {
+  width: 23rem;
+  top: 110%;
+  left: 0;
+  opacity: 1;
+  transform: translateX(-20%);
+  z-index: 20;
+  line-height: 2rem;
+}
+.trending__table .table__details {
+  max-width: 5rem;
+  max-height: 4rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 10px;
+  margin-right: auto;
+  background-color: transparent;
+}
+.trending__table .table__details div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 3px;
+}
+.trending__table .table__details img {
+  aspect-ratio: 1/1;
+  width: 44px;
+  height: 44px;
+  border: 1px solid #244677;
+  border-radius: 10px;
+}
+.trending__table .table__details .table__details_nftName {
+  font: normal normal bold 14px/16px Roboto;
+  white-space: pre;
+  max-width: 15rem;
+  overflow: hidden;
+}
+.trending__table .table__details .table__details_nftName.over span {
+  display: block;
+  animation: 10s infinite forwards longLabel ease-in-out;
+}
+@keyframes longLabel {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-90%);
+  }
+}
+.trending__table .table__details .table__details_time {
+  font: normal normal normal 12px/14px Roboto;
+}
+.trending__table .table__changes {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2px;
+  color: #25ce8c;
+  color: #fff;
+  font: normal normal bold 18px/21px Roboto;
+}
+.trending__table .table__changes span:last-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: normal normal normal 12px/14px Roboto;
+}
+.trending__table .table__changes .green {
+  color: #25ce8c;
+}
+.trending__table .table__changes .red {
+  color: #fd2f7a;
+}
+.trending__table .single span {
+  font: normal normal bold 1.9rem/21px Roboto !important;
+}
+@media (max-width: 1235px) {
+  .trending__table .table__header .head_items:first-of-type {
+    transform: translateX(50px);
+  }
+}/*# sourceMappingURL=trendingTable.css.map */

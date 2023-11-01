@@ -1,0 +1,133 @@
+.a__dropdown {
+  position: relative;
+  width: 300px;
+  min-height: 52px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+  padding-right: 0;
+  border: 2px solid #d1d1d1;
+  border-radius: 10px;
+  // margin-top: 10rem;
+
+  .a__dropdown__icons {
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    div {
+      padding: 15px 12px;
+    }
+
+    div:first-child {
+      border-right: 1px solid #244677;
+    }
+
+    svg {
+      min-width: 10px;
+      min-height: 10px;
+      fill: #fff;
+      cursor: pointer;
+    }
+
+    svg#Layer_1 {
+      min-width: 15px;
+      min-height: 15px;
+      fill: #fff;
+      stroke: #fff;
+    }
+  }
+
+  .a__dropdown__items {
+    max-height: 6rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 5px;
+    margin: 11px 0;
+    overflow: auto;
+  }
+
+  .a__dropdown__item {
+    min-width: 100px;
+    min-height: 29px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 6px;
+    background: #1956e2 0% 0% no-repeat padding-box;
+    border-radius: 10px;
+
+    svg {
+      max-width: 10px;
+      max-height: 10px;
+      fill: #fff;
+      cursor: pointer;
+
+      & * {
+        user-select: none;
+        pointer-events: none;
+      }
+    }
+
+    span {
+      display: inline-block;
+      margin: 0;
+      font: normal normal normal 16px/19px Roboto;
+      letter-spacing: 0px;
+      color: #d1d1d1;
+    }
+  }
+
+  .a__dropdown_list {
+    position: absolute;
+    top: 120%;
+    left: 0;
+    width: 298px;
+    height: fit-content;
+    max-height: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 10px;
+    padding: 9px 16px;
+    background: #244677 0% 0% no-repeat padding-box;
+    box-shadow: 0px 6px 10px #00000029;
+    opacity: 0;
+    user-select: none;
+    pointer-events: none;
+    transition: opacity 0.1s ease;
+    overflow: auto;
+
+    &.open {
+      opacity: 1;
+      user-select: unset;
+      pointer-events: unset;
+      z-index: 10;
+    }
+
+    span {
+      width: 100%;
+      padding: 9px 8px;
+      font: normal normal normal 14px/16px Roboto;
+      letter-spacing: 0px;
+      color: #d1d1d1;
+      border-top: 1px solid #0b1e39;
+      cursor: pointer;
+
+      &:hover {
+        background: #1956e2 0% 0% no-repeat padding-box;
+      }
+    }
+
+    & > span:first-of-type {
+      border: none;
+    }
+  }
+}

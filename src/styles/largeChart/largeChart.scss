@@ -1,0 +1,76 @@
+.collection__container,
+.collection {
+  .collection__charts:first-of-type {
+    .list-sails_title_y {
+      top: 50%;
+      transform: rotate(270deg) translate(-50%, 126%);
+    }
+
+    .list-sails_title_x {
+      bottom: 3%;
+    }
+  }
+
+  .collection__charts:last-of-type {
+    .list-sails_title_y {
+      top: 50%;
+      transform: rotate(270deg) translate(-50%, 130%);
+    }
+
+    .list-sails_title_x {
+      bottom: 3%;
+      transform: translateX(-25%);
+    }
+  }
+
+  .ETHPrice_chart {
+    height: 245px !important;
+  }
+
+  .collection__large_chart {
+    @media (max-width: 1181px) {
+      .charts {
+        flex-direction: column;
+        padding-bottom: 1rem;
+      }
+
+      .price_range {
+        height: fit-content !important;
+      }
+
+      .collection__charts {
+        min-height: 200px !important;
+      }
+
+      .collection__charts:first-of-type {
+        .list-sails_title_y {
+          top: 50%;
+          transform: rotate(270deg) translate(0%, 126%);
+        }
+
+        .list-sails_title_x {
+          bottom: 9%;
+        }
+      }
+
+      .collection__charts:last-of-type {
+        .list-sails_title_y {
+          top: 50%;
+        }
+
+        .list-sails_title_x {
+          bottom: 1.5%;
+          transform: translateX(-25%);
+        }
+      }
+
+      .ETHPrice_chart {
+        height: 245px !important;
+      }
+    }
+  }
+
+  .collection__filters_dropdown {
+    display: none;
+  }
+}

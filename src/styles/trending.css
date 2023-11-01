@@ -1,0 +1,108 @@
+.traits {
+  position: relative;
+  width: 100%;
+  max-width: 1366px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin: auto;
+  padding: 4.5rem 10rem;
+  overflow-x: hidden;
+}
+.traits .table__container {
+  width: 100%;
+  transition: overflow 0.2s ease;
+}
+.traits .traits__title {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0.5rem;
+  color: #fff;
+}
+.traits .traits__title h2 {
+  font: normal normal bold 22px/25px Roboto;
+}
+.traits .traits__title p {
+  font: normal normal normal 16px/19px Roboto;
+  letter-spacing: 0px;
+}
+.traits .traist__sort_timer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: -2rem;
+}
+.traits .traist__sort_timer svg {
+  margin-left: 5rem;
+}
+.traits .timers__filter__container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.traits .traits__sort-details {
+  width: 29rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: #fff;
+}
+.traits .traits__sort-details span {
+  font: normal normal bold 12px/14px Roboto;
+  white-space: pre;
+}
+.traits .traits__timers {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12.7rem;
+  margin-left: auto;
+}
+@media (min-height: 1100px) {
+  .traits {
+    margin-top: 0;
+  }
+}
+@media (max-width: 1000px) {
+  .traits .table__container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    transition: overflow 0.2s ease;
+  }
+}
+@media (max-width: 800px) {
+  .traits {
+    padding: 4.5rem 0.5rem;
+  }
+  .traits .traist__sort_timer {
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 2rem;
+    margin-bottom: 0;
+  }
+  .traits .traist__sort_timer svg {
+    margin-left: 0;
+  }
+  .traits .traits__timers {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 2rem;
+    margin-left: 0;
+  }
+  .traits .traits__sort-details {
+    width: 35.5rem;
+  }
+  .traits .timers__filter__container {
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 5rem;
+  }
+}/*# sourceMappingURL=trending.css.map */

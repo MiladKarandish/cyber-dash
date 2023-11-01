@@ -1,0 +1,116 @@
+@use './colors' as *;
+@use './variables' as *;
+
+.dropdown__container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 4.5px;
+  padding: 9px;
+
+  .dropdown {
+    position: relative;
+    width: 100%;
+    min-height: 27px;
+    background-color: $primary;
+    border-radius: $border-radius-sm;
+    padding: 6.3px;
+    cursor: pointer;
+    // overflow: hidden;
+  }
+
+  .dropdown__placeholder__icon {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    height: 100%;
+    user-select: none;
+    pointer-events: none;
+    overflow-x: hidden;
+
+    svg {
+      height: 9.9px;
+      width: fit-content;
+      fill: #0b1e39;
+      user-select: none;
+      pointer-events: none;
+    }
+  }
+
+  .dropdown__placeholder {
+    max-width: 27px;
+    font-weight: normal;
+    opacity: 0.5;
+    user-select: none;
+    pointer-events: none;
+  }
+
+  .dropdown__scroll {
+    position: absolute;
+    top: 120%;
+    left: 0;
+    width: 100%;
+    height: fit-content;
+    border-radius: $border-radius-sm;
+    overflow: hidden;
+    z-index: 11;
+  }
+
+  .dropdown__items {
+    width: 100%;
+    height: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border-radius: $border-radius-sm;
+    background-color: $primary-dark;
+    font: normal normal normal 14px/16px Roboto;
+    opacity: 0;
+    z-index: -1;
+    transition: opacity 0, all 0.1s ease-in-out;
+    user-select: none;
+    pointer-events: none;
+    overflow: hidden;
+
+    // Mozilla
+    scrollbar-width: 5px;
+    scrollbar-color: $primary-dark;
+
+    &::-webkit-scrollbar {
+      width: 5px;
+      background-color: $primary-dark;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: $primary;
+    }
+
+    &.open {
+      height: fit-content;
+      max-height: 180px;
+      overflow: hidden;
+      overflow-y: auto;
+      opacity: 1;
+      z-index: 1;
+      user-select: auto;
+      pointer-events: all;
+    }
+
+    li {
+      width: 100%;
+      border-bottom: 1px solid $primary;
+      padding: 9px;
+      font-weight: normal;
+      cursor: pointer;
+
+      // &:hover {
+      //   background-color: lighten($color: $primary-dark, $amount: 2%);
+      // }
+    }
+  }
+}

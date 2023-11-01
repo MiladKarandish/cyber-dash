@@ -1,0 +1,26 @@
+@use './colors' as *;
+
+.tooltip {
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  border: 1px solid $primary-light;
+  border-radius: 5px;
+  padding: 1rem;
+  background-color: $primary;
+  color: #fff;
+  text-align: left;
+  opacity: 0;
+  user-select: none;
+  pointer-events: none;
+  z-index: 11;
+
+  .tooltip__title {
+    font-size: 1.3rem;
+    margin-bottom: 0.7rem;
+  }
+
+  .tooltip__message {
+    font-size: 1.7rem;
+  }
+}

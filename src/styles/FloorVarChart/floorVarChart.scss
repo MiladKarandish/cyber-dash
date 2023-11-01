@@ -1,0 +1,74 @@
+.floor__container {
+  position: relative;
+
+  .floor__hider_bottom {
+    position: absolute;
+    bottom: 18%;
+    left: 1px;
+    width: 20px;
+    height: 20px;
+    background-color: #0b1e39;
+    pointer-events: none;
+  }
+
+  .floor__hider_top {
+    position: absolute;
+    top: 0;
+    left: 2px;
+    width: 25px;
+    height: 20px;
+    background-color: #0b1e39;
+    pointer-events: none;
+  }
+
+  .ETH__hider_bottom {
+    position: absolute;
+    bottom: 18%;
+    left: 1px;
+    width: 25px;
+    height: 20px;
+    background-color: #0b1e39;
+    pointer-events: none;
+  }
+
+  .ETH__hider_top {
+    position: absolute;
+    top: 0;
+    left: 2px;
+    width: 25px;
+    height: 20px;
+    background-color: #0b1e39;
+    pointer-events: none;
+  }
+}
+
+// Chart tooltip
+#custom__floorvar__tooltip {
+  position: absolute;
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  opacity: 1;
+  pointer-events: none;
+  transform: translateX(-50%);
+  transition: all 0.1s ease;
+
+  span {
+    border-radius: 10px;
+    padding: 5px 10px;
+    text-align: center;
+    font: normal normal normal 14px/16px Roboto;
+    letter-spacing: 0px;
+    line-height: normal;
+    color: #d1d1d1;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+
+  .second {
+    position: relative;
+  }
+}

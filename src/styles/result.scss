@@ -1,0 +1,13 @@
+.result__container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.5rem;
+  padding: 1rem;
+
+  h2 {
+    min-height: 3rem;
+  }
+}

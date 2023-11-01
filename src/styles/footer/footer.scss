@@ -1,0 +1,68 @@
+@use '../colors' as *;
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 4rem;
+  border-top: 1px solid $primary;
+  margin-top: 3rem;
+  padding: 4.5rem 0;
+  color: #fff;
+  font-size: 1.8rem;
+
+  .footer__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    color: #fff;
+    font-size: 1.8rem;
+  }
+
+  .footer__info {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 3rem;
+    margin-left: 0;
+    font: normal normal normal 14px/16px Roboto;
+  }
+
+  .footer__us {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12rem;
+    padding-top: 1.5rem;
+    font: normal normal bold 18px/21px Roboto;
+    font: normal normal normal 14px/31px Roboto;
+
+    div {
+      height: inherit;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+  }
+
+  .footer__copyright {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5rem;
+    border-radius: 10px;
+    padding: 2rem 1rem;
+    background-color: $primary;
+    font: normal normal normal 13px/15px Roboto;
+
+    svg:first-of-type {
+      margin-left: auto;
+    }
+  }
+}

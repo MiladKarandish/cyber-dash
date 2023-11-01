@@ -1,0 +1,17 @@
+.revealStatus {
+  width: 138px;
+  height: 24px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border: #25ce8c solid 5px;
+  border-radius: 10px;
+
+  div {
+    width: 100%;
+    height: 100%;
+    background: #25ce8c 0% 0% no-repeat padding-box;
+    border: 2px solid transparent;
+    border-radius: 5px;
+  }
+}

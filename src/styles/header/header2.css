@@ -1,0 +1,118 @@
+.max-width-header-limiter {
+  width: 100%;
+  background-color: #0b1e39;
+}
+
+.header {
+  width: 100%;
+  max-width: 1366px;
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  padding: 0 10.4rem;
+}
+.header h2 {
+  color: #fff;
+  font-size: 2.66rem;
+  cursor: pointer;
+}
+.header .header__logo {
+  width: 16.2rem;
+  font: normal normal bold 1.7rem/19px Roboto;
+}
+.header .header__menu-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4rem;
+  color: #fff;
+  font: normal normal 600 1.7rem/19px Roboto;
+  letter-spacing: 1px;
+  white-space: pre;
+}
+.header .header__menu-item span {
+  cursor: pointer;
+}
+.header .header__contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  color: #fff;
+}
+.header .header__contact__gas {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  font: normal normal normal 1.5rem/16px Roboto;
+}
+.header .header__contact__gas svg {
+  width: 2rem;
+  height: 2rem;
+}
+.header .header__contact__contact-icons {
+  width: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+.header .header__contact__contact-icons svg {
+  width: 3.5rem;
+  height: 3.5rem;
+  cursor: pointer;
+}
+.header .header__connect-wallet {
+  width: 44%;
+  border: 1px solid #fff;
+  border-radius: 50px;
+  padding: 1.3rem 1.5rem;
+  background-color: transparent;
+  color: #fff;
+  font: normal normal 600 1.6rem/19px Roboto;
+  font-weight: bold;
+  cursor: pointer;
+  white-space: pre;
+}
+@media (max-width: 1100px) {
+  .header .header__connect-wallet {
+    padding: 1.1rem 1.5rem;
+  }
+}
+@media (max-width: 1000px) {
+  .header .header__menu-item {
+    display: none;
+  }
+  .header .header__contact__gas {
+    display: none;
+  }
+  .header .header__contact__contact-icons {
+    display: none;
+  }
+  .header .header__connect-wallet {
+    width: 100%;
+    padding: 0.8rem 2rem;
+  }
+}
+@media (max-width: 800px) {
+  .header {
+    min-height: 8rem;
+    padding: 1rem;
+  }
+  .header .header__connect-wallet {
+    width: 100%;
+    padding: 0.8rem 2rem;
+  }
+}
+@media (max-width: 470px) {
+  .header input {
+    display: none;
+  }
+  .header h2 {
+    font-size: 2rem;
+  }
+}/*# sourceMappingURL=header2.css.map */

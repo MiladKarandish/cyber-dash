@@ -1,0 +1,52 @@
+.collectionBox {
+  width: -moz-fit-content;
+  width: fit-content;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  align-content: center;
+  border-radius: 15px;
+  margin: auto;
+  overflow: hidden;
+}
+.collectionBox .collection__rect {
+  width: 158px;
+  height: 93px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  background: #0b1e39 0% 0% no-repeat padding-box;
+  border: 1px solid #000f24;
+}
+.collectionBox .collection__rect .value {
+  font: normal normal bold 26px/30px Roboto;
+  letter-spacing: 0px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.collectionBox .collection__rect .title {
+  font: normal normal normal 14px/16px Roboto;
+  letter-spacing: 0px;
+  color: #d1d1d1;
+}
+.collectionBox .box__text_icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+@media (max-width: 1300px) {
+  .collectionBox .collection__rect .value {
+    font: normal normal bold 2.888rem/30px Roboto;
+  }
+  .collectionBox .collection__rect .title {
+    font: normal normal normal 1.555rem/16px Roboto;
+  }
+}
+@media (max-width: 650px) {
+  .collectionBox {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}/*# sourceMappingURL=collectionBox.css.map */

@@ -1,0 +1,67 @@
+@use './colors.scss' as *;
+
+.progress__container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.5rem;
+  padding: 1rem;
+
+  .progress__range {
+    width: 100%;
+    max-height: 0.6rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: $primary;
+    border-radius: 50px;
+
+    &::-webkit-slider-thumb {
+      -webkit-appearance: none;
+
+      height: 18px;
+      aspect-ratio: 1 / 1;
+      border: 2px solid $primary;
+      border-radius: 50%;
+      background: #ffffff;
+      cursor: pointer;
+      margin-top: -14px;
+      transform: translateY(7px);
+      background-color: #3d6398;
+    }
+
+    &::-moz-range-thumb {
+      -moz-appearance: none;
+
+      height: 18px;
+      width: 18px;
+      border: 2px solid $primary;
+      border-radius: 50%;
+      background: #ffffff;
+      cursor: pointer;
+      background-color: #3d6398;
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &::-ms-track,
+    &::-webkit-slider-runnable-track,
+    &::-moz-range-track {
+      width: 100%;
+      cursor: pointer;
+      background: transparent;
+      border-color: transparent;
+      color: transparent;
+    }
+  }
+
+  .progress__lables {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-weight: normal;
+  }
+}

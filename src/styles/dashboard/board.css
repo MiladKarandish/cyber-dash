@@ -1,0 +1,26 @@
+.board__container {
+  padding-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+.board__container .board__bots {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 26px;
+}
+@media (max-width: 646px) {
+  .board__container .board__bots {
+    flex-direction: column;
+  }
+}
+.board__container .board__title {
+  color: #fff;
+  font-size: 1.7rem;
+  font-weight: normal;
+  text-align: center;
+}/*# sourceMappingURL=board.css.map */

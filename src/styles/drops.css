@@ -1,0 +1,116 @@
+.drops {
+  min-height: -moz-fit-content;
+  min-height: fit-content;
+  position: relative;
+  width: 100%;
+  max-width: 1366px;
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+  margin: auto;
+  padding: 40.5px 90px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+.drops .buttons__container {
+  padding-left: 0;
+}
+.drops .drops__table__container {
+  transition: overflow 0.2s ease;
+}
+.drops .drops__title {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 4.5px;
+  color: #fff;
+}
+.drops .drops__title h2 {
+  font: normal normal bold 22px/25px Roboto;
+}
+.drops .drops__title p {
+  font: normal normal normal 16px/19px Roboto;
+  letter-spacing: 0px;
+}
+.drops .drops__title2 {
+  margin-top: 36px;
+}
+.drops .drops__sort_timer {
+  height: 30px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: -18px;
+}
+.drops .drops__sort_timer svg {
+  margin-left: 45px;
+}
+.drops .search__filter__container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 27px;
+}
+.drops .drops__sort-details {
+  width: 261px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: #fff;
+}
+.drops .drops__sort-details span {
+  font: normal normal bold 12px/14px Roboto;
+  white-space: pre;
+}
+.drops .drops__filter svg {
+  margin: 0;
+}
+@media (min-height: 1100px) {
+  .drops {
+    margin-top: 0;
+  }
+}
+@media (max-width: 1215px) {
+  .drops .drops__table__container {
+    overflow-x: auto;
+    overflow-y: hidden;
+    transition: overflow 0.2s ease;
+  }
+}
+@media (max-width: 800px) {
+  .drops {
+    padding: 40.5px 4.5px;
+  }
+  .drops .traist__sort_timer {
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 18px;
+    margin-bottom: 0;
+  }
+  .drops .traist__sort_timer svg {
+    margin-left: 0;
+  }
+  .drops .drops__sort-details {
+    width: 319.5px;
+  }
+  .drops .search__filter__container {
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 45px;
+  }
+}
+@media (max-width: 500px) {
+  .drops .drops__sort_timer {
+    height: -moz-fit-content;
+    height: fit-content;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .drops .drops__sort_timer svg {
+    margin-top: 9px;
+  }
+}/*# sourceMappingURL=drops.css.map */

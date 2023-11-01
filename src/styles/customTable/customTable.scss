@@ -1,0 +1,83 @@
+@use '../colors' as *;
+
+.m__table__container {
+  width: 100%;
+  margin: auto;
+  border-radius: 10px;
+  color: #fff;
+
+  .m__table {
+    width: 100%;
+    border-radius: 10px;
+    padding: 1.77rem;
+    padding-top: 2.1rem;
+    padding-bottom: 1.4rem;
+    background-color: $primary;
+
+    li {
+      // max-height: 5.88rem;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 5px;
+      border-radius: 3px;
+      padding: 1rem;
+      padding-left: 5px !important;
+      padding-right: 5px !important;
+    }
+
+    .table__header {
+      padding: 10px;
+      margin-bottom: 0;
+      background-color: transparent;
+      font: normal normal bold 12px/14px Roboto;
+    }
+
+    .table__row {
+      min-height: 53px;
+      align-items: center;
+      border-radius: 10px;
+      background-color: $primary-dark;
+      box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
+
+      &:hover {
+        background-color: $primary-light;
+      }
+    }
+
+    .col {
+      flex-basis: 20%;
+    }
+
+    // company
+    .info__details {
+      opacity: 0;
+      user-select: none;
+      pointer-events: none;
+    }
+  }
+
+  @media (max-width: 800px) {
+    width: 100%;
+    overflow: hidden;
+    overflow-x: auto;
+
+    // Mozilla
+    scrollbar-width: 5px;
+    scrollbar-color: $primary;
+
+    &::-webkit-scrollbar {
+      width: 5px;
+      height: 5px;
+      background-color: $primary;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: $primary-dark;
+    }
+
+    .m__table {
+      min-width: 1000px;
+      overflow: hidden;
+    }
+  }
+}

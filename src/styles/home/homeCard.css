@@ -1,0 +1,51 @@
+.home__card {
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0 17px;
+  border-radius: 10px;
+}
+.home__card .card__image {
+  width: 380px;
+  height: 217px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0 19px;
+  background: transparent radial-gradient(closest-side at 68% 50%, #27589d 0%, #0f2b52 100%) 0% 0% no-repeat padding-box;
+  border-radius: 10px;
+}
+.home__card .card__image div {
+  margin-top: auto;
+  margin-bottom: -20px;
+}
+.home__card .card__image h2,
+.home__card .card__image h3 {
+  margin: 0;
+  font: normal normal bold 37px/43px Roboto;
+  color: #fff;
+}
+.home__card .card__image h2 span,
+.home__card .card__image h3 span {
+  color: #ef501c;
+}
+.home__card .card__image svg {
+  margin-top: auto;
+  margin-bottom: 21.7px;
+}
+.home__card .card__text {
+  padding: 0 15px;
+  width: 347px;
+}
+.home__card .card__text h4 {
+  margin-top: 13px;
+  margin-bottom: 5px;
+  font: normal normal bold 18px/21px Roboto;
+  letter-spacing: 0px;
+  color: #ffffff;
+}
+.home__card .card__text p {
+  font: normal normal normal 14px/16px Roboto;
+  letter-spacing: 0px;
+  color: #d1d1d1;
+}/*# sourceMappingURL=homeCard.css.map */

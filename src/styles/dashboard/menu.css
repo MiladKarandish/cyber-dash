@@ -1,0 +1,32 @@
+.menu {
+  width: 100%;
+  aspect-ratio: 1/1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 20px;
+  color: #fff;
+  font: normal normal bold 16px/18px Roboto;
+  cursor: pointer;
+}
+.menu svg {
+  width: 44.23px;
+  height: 44.23px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  pointer-events: none;
+}
+.menu span {
+  white-space: pre;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  pointer-events: none;
+}
+.menu.active {
+  background-color: #244677;
+}/*# sourceMappingURL=menu.css.map */

@@ -1,0 +1,114 @@
+.expectedPnlCard {
+  min-width: 362px;
+  height: 417px;
+  background: #0b1e39 0% 0% no-repeat padding-box;
+  border-radius: 10px;
+  padding: 19px 16px;
+
+  .exp__title {
+    font: normal normal bold 20px/24px Roboto;
+    letter-spacing: 0px;
+    color: #ffffff;
+  }
+
+  .exp__header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    svg:first-of-type {
+      margin-left: auto;
+    }
+  }
+
+  .exp__items {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    // gap: 24px;
+    padding: 1rem 0;
+
+    & > div {
+      width: 100%;
+      max-height: 41px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 14px 0;
+      border-top: 1px solid #244677;
+    }
+
+    span {
+      font: normal normal normal 14px/16px Roboto;
+      letter-spacing: 0px;
+      color: #ffffff;
+    }
+
+    .exp__item_status_value {
+      width: fit-content;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 5px;
+      font: normal normal bold 14px/16px Roboto;
+      letter-spacing: 0px;
+      color: #25ce8c;
+    }
+
+    .status_green_circle {
+      font-size: 11px;
+    }
+
+    .exp__item_value_presale {
+      font: normal normal bold 20px/24px Roboto;
+      letter-spacing: 0px;
+      color: #ffffff;
+    }
+  }
+
+  .exp__footer {
+    font: normal normal normal 12px/14px Roboto;
+    letter-spacing: 0px;
+    color: #ffffff;
+    text-align: right;
+    margin-top: -8px;
+  }
+
+  .gasfee_container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 9px;
+
+    svg {
+      cursor: pointer;
+    }
+
+    &.open {
+      .gasfee__gear_menu {
+        opacity: 1;
+        user-select: unset;
+        pointer-events: unset;
+      }
+    }
+  }
+
+  .gasfee__gear_menu {
+    position: absolute;
+    top: 0;
+    left: 120%;
+    width: 300px;
+    height: 96px;
+    background: #244677 0% 0% no-repeat padding-box;
+    border-radius: 10px;
+    padding: 5px;
+    z-index: 10;
+    opacity: 0;
+    user-select: none;
+    pointer-events: none;
+    transition: all 0.3s;
+  }
+}

@@ -1,0 +1,28 @@
+@use './variables' as *;
+
+.button__container {
+  width: 100%;
+  padding: 1rem;
+
+  button {
+    width: 100%;
+    display: inline-block;
+    border: 0;
+    border-radius: $border-radius-lg;
+    outline: 0;
+    padding: 1rem;
+    background-color: #1956e2;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    white-space: pre;
+  }
+
+  &.fix {
+    button {
+      width: 111px;
+      height: 35px;
+      padding: 0;
+    }
+  }
+}

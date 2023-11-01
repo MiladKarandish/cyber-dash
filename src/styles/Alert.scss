@@ -1,0 +1,111 @@
+@use './colors.scss' as *;
+@use './variables.scss' as *;
+
+.alert__container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(5px);
+  font-size: 2rem;
+  transition: transform 0.1s ease-in;
+  transform: scale(0);
+  opacity: 0;
+  user-select: none;
+  pointer-events: none;
+
+  &.open {
+    transition: all 0.1s ease-in;
+    transform: scale(1);
+    opacity: 1;
+    user-select: unset;
+    pointer-events: unset;
+  }
+
+  .alert {
+    width: 40%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 3rem 2rem;
+    background-color: $primary-dark;
+    border-radius: $border-radius-sm;
+  }
+
+  .alert__item {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .alert__title {
+    color: $danger-color;
+    font-size: 2rem;
+  }
+
+  .alert__close {
+    cursor: pointer;
+  }
+
+  .alert__message {
+    font-size: 2rem;
+  }
+
+  .alert__buttons {
+    gap: 5rem;
+  }
+
+  button {
+    width: 100%;
+    border: none;
+
+    border-radius: $border-radius-lg;
+    padding: 1.5rem 2rem;
+    background-color: transparent;
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .fill-btn {
+    background-color: $danger-color;
+  }
+
+  .border-btn {
+    border: 1px solid #f4f4f4c1;
+  }
+
+  svg {
+    user-select: none;
+    pointer-events: none;
+    width: 1.8rem;
+    height: 1.8rem;
+  }
+
+  @media (max-width: 500px) {
+    .alert {
+      width: 80%;
+      height: 20%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 3rem 2rem;
+      background-color: $primary-dark;
+      border-radius: $border-radius-sm;
+    }
+
+    .alert__message {
+      font-size: 2rem;
+    }
+  }
+}

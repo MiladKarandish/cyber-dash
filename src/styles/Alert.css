@@ -1,0 +1,101 @@
+.alert__container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  font-size: 2rem;
+  transition: transform 0.1s ease-in;
+  transform: scale(0);
+  opacity: 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  pointer-events: none;
+}
+.alert__container.open {
+  transition: all 0.1s ease-in;
+  transform: scale(1);
+  opacity: 1;
+  -webkit-user-select: unset;
+     -moz-user-select: unset;
+          user-select: unset;
+  pointer-events: unset;
+}
+.alert__container .alert {
+  width: 40%;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 3rem 2rem;
+  background-color: #000f24;
+  border-radius: 7px;
+}
+.alert__container .alert__item {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.alert__container .alert__title {
+  color: #fd2f7a;
+  font-size: 2rem;
+}
+.alert__container .alert__close {
+  cursor: pointer;
+}
+.alert__container .alert__message {
+  font-size: 2rem;
+}
+.alert__container .alert__buttons {
+  gap: 5rem;
+}
+.alert__container button {
+  width: 100%;
+  border: none;
+  border-radius: 50px;
+  padding: 1.5rem 2rem;
+  background-color: transparent;
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+.alert__container .fill-btn {
+  background-color: #fd2f7a;
+}
+.alert__container .border-btn {
+  border: 1px solid rgba(244, 244, 244, 0.7568627451);
+}
+.alert__container svg {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  pointer-events: none;
+  width: 1.8rem;
+  height: 1.8rem;
+}
+@media (max-width: 500px) {
+  .alert__container .alert {
+    width: 80%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 3rem 2rem;
+    background-color: #000f24;
+    border-radius: 7px;
+  }
+  .alert__container .alert__message {
+    font-size: 2rem;
+  }
+}/*# sourceMappingURL=Alert.css.map */

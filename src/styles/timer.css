@@ -1,0 +1,22 @@
+.timer {
+  height: 2.2rem;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  gap: 1.1rem;
+}
+.timer button {
+  border: none;
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  outline: none;
+  background-color: transparent;
+  color: #d1d1d1;
+  font: normal normal normal 12px/14px Roboto;
+  cursor: pointer;
+}
+.timer button.active {
+  background-color: #1956e2;
+  color: #fff;
+  font: normal normal 600 12px/14px Roboto;
+}/*# sourceMappingURL=timer.css.map */

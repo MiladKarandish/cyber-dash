@@ -1,0 +1,45 @@
+.input__container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 4.5px;
+  padding: 9px;
+}
+.input__container .input__title-contianer {
+  max-width: 117px;
+  overflow: hidden;
+}
+.input__container .input__title-contianer .input__title {
+  font: normal normal bold 12px/14px Roboto;
+}
+.input__container .input__title-contianer.over span {
+  display: block;
+  animation: 10s infinite forwards longLabel ease-in-out;
+}
+@keyframes longLabel {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-80%);
+  }
+}
+.input__container .input__input {
+  width: 100%;
+  min-height: 3rem;
+  background-color: #0b1e39;
+  border: none;
+  outline: none;
+  border-radius: 7px;
+  padding: 6.3px;
+  color: #fff;
+  font: normal normal normal 14px/16px Roboto;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.input__container .input__input:focus {
+  outline: 2px solid #1956e2;
+}/*# sourceMappingURL=input.css.map */

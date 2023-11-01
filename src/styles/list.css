@@ -1,0 +1,46 @@
+.list__container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  padding: 3rem;
+  color: #fff;
+  overflow: auto;
+}
+.list__container h2 {
+  position: fixed;
+  font-size: 1.7rem;
+  margin-bottom: 2rem;
+}
+.list__container .list__Buttons {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 5rem;
+}
+@media (max-width: 800px) {
+  .list__container .list__Buttons {
+    width: 100%;
+  }
+}
+@media (max-width: 670px) {
+  .list__container .list__Buttons {
+    padding: 0 2rem;
+  }
+}
+@media (max-width: 656px) {
+  .list__container .list__Buttons {
+    justify-content: flex-start;
+  }
+}
+@media (max-width: 530px) {
+  .list__container .list__Buttons {
+    width: 200%;
+  }
+}/*# sourceMappingURL=list.css.map */

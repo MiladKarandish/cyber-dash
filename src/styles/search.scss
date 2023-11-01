@@ -1,0 +1,75 @@
+@use './colors' as *;
+@use './variables' as *;
+
+.search {
+  width: 21.555rem;
+  height: 4.444rem;
+  border: none;
+  border-radius: $border-radius-lg;
+  padding: 1rem 1rem;
+  background-color: $primary-light;
+  color: #fff;
+  outline: none;
+
+  &.other-placeholder {
+    &::-webkit-input-placeholder {
+      /* WebKit, Blink, Edge */
+      color: #244677;
+    }
+    &:-moz-placeholder {
+      /* Mozilla Firefox 4 to 18 */
+      color: #244677;
+      opacity: 1;
+    }
+    &::-moz-placeholder {
+      /* Mozilla Firefox 19+ */
+      color: #244677;
+      opacity: 1;
+    }
+    &:-ms-input-placeholder {
+      /* Internet Explorer 10-11 */
+      color: #244677;
+    }
+    &::-ms-input-placeholder {
+      /* Microsoft Edge */
+      color: #244677;
+    }
+
+    &::placeholder {
+      /* Most modern browsers support this now. */
+      color: #244677;
+    }
+  }
+
+  &::-webkit-input-placeholder {
+    /* WebKit, Blink, Edge */
+    color: $primary;
+  }
+  &:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: $primary;
+    opacity: 1;
+  }
+  &::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: $primary;
+    opacity: 1;
+  }
+  &:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: $primary;
+  }
+  &::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: $primary;
+  }
+
+  &::placeholder {
+    /* Most modern browsers support this now. */
+    color: $primary;
+  }
+
+  @media (max-width: 1000px) {
+    width: 30%;
+  }
+}

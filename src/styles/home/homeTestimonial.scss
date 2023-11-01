@@ -1,0 +1,45 @@
+.testimonial {
+  width: 320px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: auto;
+  border: 2px solid #0b1e39;
+  border-radius: 10px;
+  padding: 22px 19px;
+
+  & > p {
+    font: normal normal normal 14px/16px Roboto;
+    letter-spacing: 0px;
+    color: #d1d1d1;
+  }
+
+  & > div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    color: #fff;
+
+    h5 {
+      font: normal normal bold 16px/18px Roboto;
+    }
+
+    p {
+      font: normal normal normal 14px/16px Roboto;
+    }
+  }
+
+  img {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+  }
+
+  @media (max-width: 330px) {
+    width: 100%;
+    height: fit-content;
+  }
+}

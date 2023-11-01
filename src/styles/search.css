@@ -1,0 +1,33 @@
+.search {
+  width: 21.555rem;
+  height: 4.444rem;
+  border: none;
+  border-radius: 50px;
+  padding: 1rem 1rem;
+  background-color: #244677;
+  color: #fff;
+  outline: none;
+}
+.search.other-placeholder::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #244677;
+  opacity: 1;
+}
+.search.other-placeholder::placeholder {
+  /* Most modern browsers support this now. */
+  color: #244677;
+}
+.search::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #0b1e39;
+  opacity: 1;
+}
+.search::placeholder {
+  /* Most modern browsers support this now. */
+  color: #0b1e39;
+}
+@media (max-width: 1000px) {
+  .search {
+    width: 30%;
+  }
+}/*# sourceMappingURL=search.css.map */

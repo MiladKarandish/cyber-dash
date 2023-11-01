@@ -1,0 +1,154 @@
+.floor-var__dropdown {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 4.5px;
+  padding: 9px;
+}
+.floor-var__dropdown .dropdown {
+  position: relative;
+  width: 113% !important;
+  min-height: 27px;
+  background-color: #0b1e39;
+  border-radius: 7px;
+  padding: 6.3px;
+  cursor: pointer;
+}
+.floor-var__dropdown .dropdown_items {
+  width: 100%;
+  height: 128px;
+}
+.floor-var__dropdown .dropdown_items li {
+  position: relative;
+  height: 63px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 9.5px;
+  border-radius: 7px;
+}
+.floor-var__dropdown .dropdown_items li.deActive {
+  background-color: rgba(105, 105, 105, 0.6274509804);
+  /* For Firefox browsers */
+}
+.floor-var__dropdown .dropdown_items li.deActive .sign {
+  background-color: rgba(105, 105, 105, 0.6274509804);
+  pointer-events: none;
+}
+.floor-var__dropdown .dropdown_items li.deActive .slider * {
+  background-color: rgba(105, 105, 105, 0.6274509804);
+  pointer-events: none;
+}
+.floor-var__dropdown .dropdown_items li.deActive .thumb::-webkit-slider-thumb {
+  background-color: rgba(105, 105, 105, 0.6274509804);
+  border: 2px solid rgba(105, 105, 105, 0.6274509804);
+  pointer-events: none;
+}
+.floor-var__dropdown .dropdown_items li.deActive .thumb::-moz-range-thumb {
+  background-color: rgba(105, 105, 105, 0.6274509804);
+  border: 2px solid rgba(105, 105, 105, 0.6274509804);
+  pointer-events: none;
+}
+.floor-var__dropdown .dropdown_items .sign {
+  min-width: 35px;
+  min-height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background: #0b1e39 0% 0% no-repeat padding-box;
+  text-align: center;
+  font: normal normal bold 22px/25px Roboto;
+  letter-spacing: 0px;
+  color: #ffffff;
+}
+.floor-var__dropdown .dropdown__placeholder__icon {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100%;
+  height: 100%;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  pointer-events: none;
+  overflow-x: hidden;
+}
+.floor-var__dropdown .dropdown__placeholder__icon svg {
+  height: 9.9px;
+  width: -moz-fit-content;
+  width: fit-content;
+  fill: #0b1e39;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  pointer-events: none;
+}
+.floor-var__dropdown .dropdown__placeholder {
+  max-width: 27px;
+  font-weight: normal;
+  opacity: 0.5;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  pointer-events: none;
+}
+.floor-var__dropdown .dropdown__scroll {
+  position: absolute;
+  top: 120%;
+  left: 50%;
+  width: 272px;
+  height: -moz-fit-content;
+  height: fit-content;
+  border-radius: 7px;
+  z-index: 5;
+  transform: translateX(-50%);
+}
+.floor-var__dropdown .dropdown__items {
+  width: 100%;
+  height: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border-radius: 7px;
+  background-color: #000f24;
+  font: normal normal normal 14px/16px Roboto;
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 0, all 0.1s ease-in-out;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  pointer-events: none;
+  scrollbar-width: 5px;
+  scrollbar-color: #000f24;
+}
+.floor-var__dropdown .dropdown__items::-webkit-scrollbar {
+  width: 5px;
+  background-color: #000f24;
+}
+.floor-var__dropdown .dropdown__items::-webkit-scrollbar-thumb {
+  background-color: #0b1e39;
+}
+.floor-var__dropdown .dropdown__items.open {
+  height: -moz-fit-content;
+  height: fit-content;
+  max-height: 180px;
+  opacity: 1;
+  z-index: 1;
+  -webkit-user-select: auto;
+     -moz-user-select: auto;
+          user-select: auto;
+  pointer-events: all;
+}
+.floor-var__dropdown .dropdown__items li {
+  width: 100%;
+  border-bottom: 1px solid #0b1e39;
+  padding: 9px;
+  font-weight: normal;
+  cursor: pointer;
+}/*# sourceMappingURL=floorVarDropdown.css.map */
